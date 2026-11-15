@@ -1,64 +1,24 @@
-**# Beverage Batch Quality Checks**
+# Beverage Batch Quality Checks
 
+## Project overview
 
+I used Python to check six fictional beverage batches against example pH and Brix ranges. This project was inspired by my experience measuring pH, Brix, and acidity during beverage quality checks at Viju Foods.
 
-**## Project overview**
+## How the checks work
 
+I used pandas to check whether each batch fell within the example ranges of 3.2–3.6 for pH and 11.0–11.8 °Bx for Brix. Both ranges include their endpoints. I flagged a batch for review if either measurement fell outside its range, then used Matplotlib to chart the results.
 
+## Results
 
-**I used Python to check six fictional beverage batches against example**
+- B01 and B04 met both criteria.
+- B02, B05, and B06 fell outside the Brix range.
+- B03 had a pH of 3.9, above the example upper limit of 3.6.
 
-**pH and Brix ranges. This project was inspired by my experience measuring**
+## How to run the project
 
-**pH, Brix, and acidity during beverage quality checks at Viju Foods.**
+1. Open the `.ipynb` file in Jupyter Notebook.
+2. Make sure pandas and Matplotlib are installed.
+3. Run all cells from top to bottom.
 
-
-
-**## How the checks work**
-
-
-
-**I used pandas to check whether each batch had a pH of 3.2–3.6 and a**
-
-**Brix value of 11.0–11.8 °Bx. Both ranges include their endpoints.**
-
-**A batch was flagged for review if either measurement was outside its**
-
-**range. I used Matplotlib to chart the number of batches in each group.**
-
-
-
-**The measurements and limits are for this practice exercise.**
-
-
-
-**## Results**
-
-
-
-**- B01 and B04 met both criteria.**
-
-**- B02, B05, and B06 were flagged for Brix.**
-
-**- B03 was flagged because its pH was 3.9, above the example upper**
-
-&#x20; **limit of 3.6.**
-
-
-
-**## How to run the project**
-
-
-
-**1. Open `Beverage Batch Quality Checks.ipynb` in Jupyter Notebook.**
-
-**2. Make sure pandas and Matplotlib are installed.**
-
-**3. Run all cells from top to bottom.**
-
-
-
-**The notebook creates the fictional data in Python, so no separate**
-
-**dataset download is needed.**
+The notebook creates the fictional data in Python, so no separate dataset download is needed.
 
